@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\ftech\fcharset77 Symbol;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\info
+{\author bhuvan mn}}\paperw11905\paperh16837\margl589\margr118\margb0\margt334\vieww28800\viewh18000\viewkind1\viewscale143
+\deftab720
+\pard\pardeftab720\li720\fi-360\ri-47\partightenfactor0
+\ls1\ilvl0
+\f0\fs24 \cf0 \
+\'a5	
+\f1 Standalone ec2 instance \
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Create vpc\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Launch instance \
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Give name-webserver\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Ubuntu22.04(free tier)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 T2.micro\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Vockey\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Edit-Create security group\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Ssh\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Http\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Https\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Config volume\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Launch instance (copy public IP addresses)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 AWS details(download labsuser pem)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 In terminal:\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Cd download \
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo chmod 600 labsuser.pem\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo ssh -i labsuser.pem Ubuntu @public ip\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo apt-get update\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo apt-get install apache2 libapache2-mod-php php-mysql mysql-client\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo systemctl status apache2\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo git-clone cafe dynamic website\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo mkdir /var/www/html/cafeapp\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Cd Cafe_Dynamic_website/\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo  cp -rf mompopcafe/* /var/www/html/cafeapp/\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 sudo nano  /etc/apache2/sites-available/000-default.conf (add cafeappa beside html)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo systemctl restart apache2\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Cd(come out of cafe_dynamic website)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo apt-get install Mysql-server mysql-client \
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo MySQL -u root -p\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Pd: cloud@321\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Create database;\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Show databases(mom_pop_db)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 CREATE USER 'msis'@'localhost' IDENTIFIED BY 'Msois@123';\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 ALTER USER 'msis'@'localhost' IDENTIFIED WITH mysql_native_password BY  'Msois@123';\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 use mom_pop_db;\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 GRANT ALL PRIVILEGES ON mom_pop_db .*  TO 'msis'@'localhost' ;\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Exit\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 (Now login as msis)Sudo MySQL -u msis -p\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Pd:Msois@123\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Show databases;(should show mom_pop_db)\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Exit\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 cd Cafe_Dynamic_website/\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Cd mompopdb\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo MySQL -u msis -p\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Source  create-db.sql;\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Show tables;\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 (Cafe_Dynamic_website/mompopdb/ )Cd  /var/www/html/cafeapp\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo nano getAppParameters\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Url -Localhost\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Name- msis\
+\ls1\ilvl0
+\f0 \'a5	
+\f1 Sudo systemctl restart apache2\
+}
