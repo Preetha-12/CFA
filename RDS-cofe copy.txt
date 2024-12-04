@@ -1,0 +1,67 @@
+
+RDS-cofe:
+
+→ cd Dovwloads/
+
+→ Sudo chmod 600 labsuser.pem
+
+→ sudo ssh --i labsuser.pem ubuntu@serrver ip
+
+→ Irside webseiver → sudo apt-get update 
+
+→ sudo apt-get install apache2 mysgl-client- -y 
+
+→ sudo mysgl -u admin -h databaredscudpoßnt -p
+
+→ Eute password .
+
+→ create database cofedb,"
+
+
+→ gRANT AIL PREVILECES ON CAfedb:" TO 'admmi@%
+	With  GRANT OPIION;
+
+→ exit;
+
+
+→ Now in web server,
+
+→ sudo git done http//. Cafe Dynami-Website.git
+
+→ Cd Cafe Dynamic-website/ mompopdb 
+
+→ sudo mysql -u admin -h databaseeudport -p
+
+→ inside Mysgl:.\
+
+→ use cofedb;
+
+→ soure mompopdlb/create-db-sql;
+
+→ show tables ;
+
+→ seleet * from products;
+
+→ cd ..
+
+→ cd Cafe Dynanic -website/
+
+→ sudo midir /var/www/html/cafeapp
+
+→ ls
+
+→ sudo cp-rf mompopcofe/* /var/www/html/cafeap/.
+→ ls
+
+→ sudo nano /etc/apache2/sites -available / 000.default conf
+
+→ sudo system Ctl restart  apaches
+
+→ Sudo nano getAppparameters.php
+
+→ sudo systemctl restart apaches2
+
+
+
+
+
