@@ -1,0 +1,135 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13660\viewh13400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 How do copy a file to remote server \
+\
+\uc0\u8594 sudo sep-i labsuser.pem labsuser.pem ubuntu@44.223.30.233/home/ulourilu/.\
+\
+\ul copying labuser \ulnone mn same name to that IP addres"\
+\
+\uc0\u8594 Sudo ssh- i labuser.penm ubuntu @ public ip adders\
+\
+\uc0\u8594 Is\
+\
+alpathofwebservespublicIP.\
+\
+\uc0\u8594 sudo chmod 600l abusa.pers->exit.( Ec2,abserver)\
+\
+midessudosonilabuerperubuntu@10.0.1.00(privateipadal\
+ipa\
+\uc0\u8594 sudoapt-getupdate\
+\
+mysal can work only on localhost.\
+\
+\uc0\u8594 ipaddress changes everytime you login-  publicipaddress (floatingisadd. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\uc0\u8594 sudo ssh llabsuser.pem ubuntu@public ip \'97>websernes\
+\
+\uc0\u8594 sudo gitclone (doument command)\
+\
+\uc0\u8594 cd cafe-dynamic-website/   \
+\
+\
+\
+\uc0\u8594 sudo mkdir/var/www/html/cafeapp  \'97>   document nootfolder\
+\
+\uc0\u8594 sudo cp-rf mompopcafe/*/var/www/html/capeapp/.     \'97>  copyingspecedot.\
+\
+\
+\
+\uc0\u8594 sudo nano/etc/apaches/sites-available/000-default.com)\
+\
+\uc0\u8594 Document root /var/wud/himl/cafeapp\
+\
+\uc0\u8594 sudo system restart apache2\
+\
+		\
+		webpageset-\
+\
+Do ssh to dbserver foom webrever:only possible way to access db\
+\
+\
+\uc0\u8594 is:\
+\
+\uc0\u8594 ssh i labsuser.pem ubuntu@private ip\
+\
+\uc0\u8594 sudo apt-get update\
+\
+\uc0\u8594 sudo apt-ge tinstall mysal-serves mysql-client\
+\
+\uc0\u8594 sudo gitclone(document command) to sources sql lfile\
+\
+\uc0\u8594 Sudo nano /etc/mysql/mysql.com.d/mysqld.cnf\
+\
+any change service to be changed\
+\
+bind-address =127.0.0.1(localhostdatabase)\
+		=0.0.0.0(orprivateIPofabsenver)\
+\
+db listens on all iP address on thes  cover.\
+(listens even if IPaddress changes)\
+\
+\
+\uc0\u8594 sudo system ctl restart mysql.service\
+\uc0\u8594 sudo mysql-u root-p   Create a user meisc obo Can connect via localhost +anyremoteIpadder\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \uc0\u8594 create database momcafedb;\
+\
+\
+\uc0\u8594 CreateUSER"mss'@'%' IDENTIFIED (document command)\
+Or ip address\
+\
+\
+\uc0\u8594 ALTERUSER  (doc command)\
+\
+GRANTUSER    (doccommand)\
+\
+Exit from db server \
+Exit \
+sude mysql -u msis -h <ip address of server> -p\
+(scourity goop bolock the bobbieantyeshigivon)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \uc0\u8594  web server ; security group ; security group (ID)\
+\uc0\u8594  observer : security group : inbound rule : add a rule\
+\uc0\u8594  type mysql , source type : custom , source :copied security group (ID)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+-Show database \uc0\u8594  use mom cafedb\
+\uc0\u8594 source cafe_Dynamic_website/mompopdb/create-db.sql\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \uc0\u8594 exit\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \uc0\u8594 cd/ar/ww/hom/cabeapp\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \uc0\u8594 ls\
+\uc0\u8594 sudo nano getAppparameters.php\
+\
+db.url : privateIPaddres(dbserver)\
+db-name: mom cafedb \
+db-uses : msis\
+\uc0\u8594 sudo Syctem ctl restart apache2\
+\uc0\u8594 usemom\
+\
+Alternate on public IP goto Cafe-Dynamic-Website/mompop.\
+Enter into sql  on db\
+sousce create-db.sal;\
+\
+\uc0\u8594 Open website using public IP of webserver.\
+\
+\
+\
+}
